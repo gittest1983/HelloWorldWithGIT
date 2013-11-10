@@ -1,15 +1,20 @@
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 public class VolleyBall_Container {
-    public static void main(String[] args) {
-        System.out.print("Hello world!");
-        System.out.print("Done");
-        System.out.print("changes on 4-Nov");
-        System.out.print("changes on 5-Nov");
-
-
+    private WebDriver driver;
+    @Test
+    public void launchVolleyballGui() {
+        System.out.println("Hello world!");
+        System.out.println("Done");
+        System.out.println("changes on 4-Nov");
+        System.out.println("changes on 5-Nov");
+        WebDriver driver = new FirefoxDriver();
+        driver.get("http://www.google.com");
+        driver.quit();
     }
-
-
-    //Another changes for test
-
 }
